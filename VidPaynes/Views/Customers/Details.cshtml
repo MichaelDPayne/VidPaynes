@@ -1,0 +1,15 @@
+﻿@model VidPaynes.Models.Customers
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+
+<ul>
+    <li>@Model.MembershipType.MembershipName</li>
+    @if (@Model.DOB != null)
+    {
+        <li>@Model.DOB.Value.ToShortDateString()</li>
+    }
+</ul>

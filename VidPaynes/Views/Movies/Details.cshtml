@@ -1,0 +1,24 @@
+﻿@model VidPaynes.Models.Movie
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<ul>
+    <li>@Model.Name</li>
+    <li>@Model.Genre.Name</li>
+    <li>@Model.DateReleased.ToShortDateString()</li>
+    <li>@Model.DateAdded.ToShortDateString()</li>
+    @if (Model.Stock <= 0)
+    {
+        <li>No More Available</li>
+    }
+    else
+    {
+
+        <li>@Model.Stock</li>
+    }
+</ul>
+
