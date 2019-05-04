@@ -42,3 +42,11 @@ input.error {
     .btn:hover {
         margin: 30px 0 30px 0;
     }
+
+#nav-bg {
+    background-color: darkblue;
+    width: 100%;
+}
+    #nav-bg a {
+        color: antiquewhite;
+    }

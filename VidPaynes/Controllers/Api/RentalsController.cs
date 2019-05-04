@@ -41,9 +41,9 @@ namespace VidPaynes.Controllers.Api
             foreach (var movie in movies)
             {
 
-                if (movie.StockAvailable == 0)
+                if (movie.Stock == 0)
                     return BadRequest(movie.Name + "is Out of Stock");
-                movie.StockAvailable--;
+                movie.Stock--;
 
                 var newRental = _context.Rentals.Add(new Rental
                 {

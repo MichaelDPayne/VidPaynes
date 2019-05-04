@@ -107,13 +107,10 @@
                             $("#movie").typeahead("val", "");
                             $("#movies").empty();
 
-                            vm = { movieIds:[] }
+                            vm = { movieIds: [] }
 
                             validator.resetForm();
-                            })
-                            .fail(function () {
-                                toastr.fail("Rental Failed to Record")
-                            });
+                        });
 
                         return false;
                     }
