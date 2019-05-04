@@ -10,6 +10,8 @@ using VidPaynes.ViewModels;
 
 namespace VidPaynes.Controllers
 {
+
+    [AllowAnonymous]
     public class MoviesController : Controller
     {
         private ApplicationDbContext _context;

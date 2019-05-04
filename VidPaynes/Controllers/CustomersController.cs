@@ -9,6 +9,7 @@ using VidPaynes.ViewModels;
 
 namespace VidPaynes.Controllers
 {
+    [AllowAnonymous]
     public class CustomersController : Controller
     {
         private ApplicationDbContext _context;

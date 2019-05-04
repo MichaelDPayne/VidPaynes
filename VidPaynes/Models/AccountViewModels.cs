@@ -5,10 +5,6 @@ namespace VidPaynes.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
-        [Required]
-        [StringLength(255)]
-        [Display(Name = "National Insurance Number")]
-        public string NationalInsuranceNumber { get; set; }
 
         [Required]
         [Display(Name = "Email")]
@@ -69,11 +65,6 @@ namespace VidPaynes.Models
 
     public class RegisterViewModel
     {
-
-        [Required]
-        [StringLength(255)]
-        [Display(Name = "National Insurance Number")]
-        public string NationalInsuranceNumber { get; set; }
 
         [Required]
         [EmailAddress]

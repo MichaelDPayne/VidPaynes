@@ -325,6 +325,10 @@
     <Compile Include="Migrations\201905031113415_CheckingRentalsDB.Designer.cs">
       <DependentUpon>201905031113415_CheckingRentalsDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905041218262_RemovedNINumber.cs" />
+    <Compile Include="Migrations\201905041218262_RemovedNINumber.Designer.cs">
+      <DependentUpon>201905041218262_RemovedNINumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customers.cs" />
@@ -477,6 +481,8 @@
     <Content Include="Content\DataTables\css\common.scss" />
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
+    <Content Include="Index.cshtml" />
+    <None Include="Properties\PublishProfiles\VidPaynes - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -564,6 +570,7 @@
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
@@ -683,6 +690,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905031113415_CheckingRentalsDB.resx">
       <DependentUpon>201905031113415_CheckingRentalsDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905041218262_RemovedNINumber.resx">
+      <DependentUpon>201905041218262_RemovedNINumber.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
