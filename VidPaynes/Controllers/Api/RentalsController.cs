@@ -46,10 +46,8 @@ namespace VidPaynes.Controllers.Api
 
                 if (customer.MoviesRented != null)
                 {
-                    if (customer.MoviesRented.Count == 3)
+                    if (customer.MoviesRented.Count >= 3)
                         return BadRequest("Customers can Only Rent 3 Movies at a Time");
-
-                    customer.MoviesRented.Add(movie);
                 }
 
                 movie.Stock--;
@@ -60,7 +58,12 @@ namespace VidPaynes.Controllers.Api
                     Movie = movie,
                     DateRented = DateTime.Now
                 });
+
+                customer.MoviesRented.Add(newRental);
+
             }
+
+     
 
             _context.SaveChanges();
 

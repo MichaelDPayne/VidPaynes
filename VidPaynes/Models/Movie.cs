@@ -19,8 +19,6 @@ namespace VidPaynes.Models
         [Display(Name = "Genre")]
         [Required]
         public byte GenreId { get; set; }
-
-        public DateTime? DateAdded { get; set; }
         
         [Display(Name = "Date Of Release")]
         [Required]

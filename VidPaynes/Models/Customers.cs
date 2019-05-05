@@ -16,7 +16,7 @@ namespace VidPaynes.Models
 
         public bool isSubscribed { get; set; }
 
-        public List<Movie> MoviesRented { get; set; }
+        public List<Rental> MoviesRented { get; set; }
 
         public MembershipType MembershipType { get; set; }
 

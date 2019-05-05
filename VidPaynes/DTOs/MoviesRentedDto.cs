@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using VidPaynes.Models;
 
 namespace VidPaynes.DTOs
 {
-    public class MoviesDTO
+    public class MoviesRentedDto
     {
         public int Id { get; set; }
 
@@ -19,11 +18,8 @@ namespace VidPaynes.DTOs
         public byte GenreId { get; set; }
 
         public GenreDto Genre { get; set; }
-        
+
         [Required]
         public DateTime? DateReleased { get; set; }
-
-        [Range(1, 20)]
-        public int Stock { get; set; }
     }
 }
