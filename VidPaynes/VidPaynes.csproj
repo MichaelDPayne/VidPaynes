@@ -329,6 +329,22 @@
     <Compile Include="Migrations\201905041218262_RemovedNINumber.Designer.cs">
       <DependentUpon>201905041218262_RemovedNINumber.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905050825058_AddedMovieRentedIdsToCustomers.cs" />
+    <Compile Include="Migrations\201905050825058_AddedMovieRentedIdsToCustomers.Designer.cs">
+      <DependentUpon>201905050825058_AddedMovieRentedIdsToCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905050827165_AddedMoviesRentedToCustomerDTO.cs" />
+    <Compile Include="Migrations\201905050827165_AddedMoviesRentedToCustomerDTO.Designer.cs">
+      <DependentUpon>201905050827165_AddedMoviesRentedToCustomerDTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905050829533_ChangedMovieArrayToMovieType.cs" />
+    <Compile Include="Migrations\201905050829533_ChangedMovieArrayToMovieType.Designer.cs">
+      <DependentUpon>201905050829533_ChangedMovieArrayToMovieType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905050837346_AddedLogicToRentalsAPIforMoviesRented.cs" />
+    <Compile Include="Migrations\201905050837346_AddedLogicToRentalsAPIforMoviesRented.Designer.cs">
+      <DependentUpon>201905050837346_AddedLogicToRentalsAPIforMoviesRented.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customers.cs" />
@@ -694,6 +710,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905041218262_RemovedNINumber.resx">
       <DependentUpon>201905041218262_RemovedNINumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905050825058_AddedMovieRentedIdsToCustomers.resx">
+      <DependentUpon>201905050825058_AddedMovieRentedIdsToCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905050827165_AddedMoviesRentedToCustomerDTO.resx">
+      <DependentUpon>201905050827165_AddedMoviesRentedToCustomerDTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905050829533_ChangedMovieArrayToMovieType.resx">
+      <DependentUpon>201905050829533_ChangedMovieArrayToMovieType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905050837346_AddedLogicToRentalsAPIforMoviesRented.resx">
+      <DependentUpon>201905050837346_AddedLogicToRentalsAPIforMoviesRented.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

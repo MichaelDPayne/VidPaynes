@@ -43,7 +43,12 @@ namespace VidPaynes.Controllers.Api
 
                 if (movie.Stock == 0)
                     return BadRequest(movie.Name + "is Out of Stock");
+                if (customer.MoviesRented.Count == 3)
+                    return BadRequest("Customers can Only Rent 3 Movies at a Time");
+
                 movie.Stock--;
+
+                customer.MoviesRented.Add(movie);
 
                 var newRental = _context.Rentals.Add(new Rental
                 {

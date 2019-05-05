@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using VidPaynes.Models;
 
 namespace VidPaynes.DTOs
 {
@@ -16,6 +18,8 @@ namespace VidPaynes.DTOs
         public byte MembershipTypeId { get; set; }
 
         public MembershipTypeDto MembershipType { get; set; }
+
+        public List<Movie> MoviesRented { get; set; }
 
         //        [Min18YearsIfAMember]
         public DateTime? Birthdate { get; set; }
