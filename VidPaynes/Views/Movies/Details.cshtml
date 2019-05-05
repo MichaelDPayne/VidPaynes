@@ -7,18 +7,16 @@
 <h2>Details</h2>
 
 <ul>
-    <li>@Model.Name</li>
-    <li>@Model.Genre.Name</li>
-    <li>@Model.DateReleased.ToShortDateString()</li>
-    <li>@Model.DateAdded.ToShortDateString()</li>
+    <li><strong>Name: </strong>@Model.Name</li>
+    <li><strong>Genre </strong>@Model.Genre.Name</li>
+    <li><strong>Date of Release: </strong>@Model.DateReleased.Value.ToShortDateString()</li>
     @if (Model.Stock <= 0)
     {
         <li>No More Available</li>
     }
     else
     {
-
-        <li>@Model.Stock</li>
+        <li><strong>Stock Level: </strong>@Model.Stock</li>
     }
 </ul>
 

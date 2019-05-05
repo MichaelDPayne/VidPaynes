@@ -11,7 +11,7 @@ using VidPaynes.ViewModels;
 namespace VidPaynes.Controllers
 {
 
-    [AllowAnonymous]
+    
     public class MoviesController : Controller
     {
         private ApplicationDbContext _context;
@@ -37,10 +37,19 @@ namespace VidPaynes.Controllers
             return View();
         }
 
-        [Route("movies/list/details/{Id}")]
+        [Route("movies/edit/{Id}")]
         public ActionResult Details(int id)
         {
             var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+
+            var viewModel = new MovieFormViewModel()
+            {
+                Movie = movie,
+                Genres = _context.Genres.ToList()
+            };
+
+            if (User.IsInRole(RoleName.CanManageMovies))
+                return View("MovieForm", viewModel);
 
             return View(movie);
         }
