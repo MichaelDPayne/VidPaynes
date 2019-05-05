@@ -54,3 +54,7 @@ input.error {
     #nav-bg a {
         color: antiquewhite;
     }
+
+    #main-navbar {
+        border: none;
+    }
