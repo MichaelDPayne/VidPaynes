@@ -19,7 +19,6 @@ namespace VidPaynes.DTOs
 
         public MembershipTypeDto MembershipType { get; set; }
 
-        public List<RentalDto> MoviesRented { get; set; }
 
         //        [Min18YearsIfAMember]
         public DateTime? Birthdate { get; set; }

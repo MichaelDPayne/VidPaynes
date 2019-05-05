@@ -7,13 +7,13 @@ namespace VidPaynes.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class RemovedDateAddedFromMovies : IMigrationMetadata
+    public sealed partial class RevertedBackToDetailsCommit : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RemovedDateAddedFromMovies));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(RevertedBackToDetailsCommit));
         
         string IMigrationMetadata.Id
         {
-            get { return "201905050920571_RemovedDateAddedFromMovies"; }
+            get { return "201905051108332_RevertedBackToDetailsCommit"; }
         }
         
         string IMigrationMetadata.Source

@@ -236,7 +236,6 @@
     <Compile Include="DTOs\MembershipTypeDto.cs" />
     <Compile Include="DTOs\GenreDto.cs" />
     <Compile Include="DTOs\MoviesDTO.cs" />
-    <Compile Include="DTOs\MoviesRentedDto.cs" />
     <Compile Include="DTOs\RentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
@@ -346,13 +345,9 @@
     <Compile Include="Migrations\201905050837346_AddedLogicToRentalsAPIforMoviesRented.Designer.cs">
       <DependentUpon>201905050837346_AddedLogicToRentalsAPIforMoviesRented.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905050920571_RemovedDateAddedFromMovies.cs" />
-    <Compile Include="Migrations\201905050920571_RemovedDateAddedFromMovies.Designer.cs">
-      <DependentUpon>201905050920571_RemovedDateAddedFromMovies.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201905050946024_ChangedMoviesRentedTypetoRental.cs" />
-    <Compile Include="Migrations\201905050946024_ChangedMoviesRentedTypetoRental.Designer.cs">
-      <DependentUpon>201905050946024_ChangedMoviesRentedTypetoRental.cs</DependentUpon>
+    <Compile Include="Migrations\201905051108332_RevertedBackToDetailsCommit.cs" />
+    <Compile Include="Migrations\201905051108332_RevertedBackToDetailsCommit.Designer.cs">
+      <DependentUpon>201905051108332_RevertedBackToDetailsCommit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -732,11 +727,8 @@
     <EmbeddedResource Include="Migrations\201905050837346_AddedLogicToRentalsAPIforMoviesRented.resx">
       <DependentUpon>201905050837346_AddedLogicToRentalsAPIforMoviesRented.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905050920571_RemovedDateAddedFromMovies.resx">
-      <DependentUpon>201905050920571_RemovedDateAddedFromMovies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905050946024_ChangedMoviesRentedTypetoRental.resx">
-      <DependentUpon>201905050946024_ChangedMoviesRentedTypetoRental.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201905051108332_RevertedBackToDetailsCommit.resx">
+      <DependentUpon>201905051108332_RevertedBackToDetailsCommit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

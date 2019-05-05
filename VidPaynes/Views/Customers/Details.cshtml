@@ -18,14 +18,3 @@
     }
 </ul>
 
-@if (Model.MoviesRented != null)
-{
-    <h2>Current Movies on Rent</h2>
-    foreach (var m in Model.MoviesRented)
-    {
-        <ul>
-            <li><strong>Title: </strong>@m.Name</li>
-            <li><strong>Genre: </strong>@m.Genre.Name</li>
-        </ul>
-    }
-}
