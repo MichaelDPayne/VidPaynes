@@ -7,9 +7,13 @@
 <h2>@Model.Name</h2>
 
 <ul>
-    <li>@Model.MembershipType.MembershipName</li>
+    <li><strong>Membership: </strong>@Model.MembershipType.MembershipName</li>
     @if (@Model.DOB != null)
     {
-        <li>@Model.DOB.Value.ToShortDateString()</li>
+        <li><strong>Date of Birth: </strong>@Model.DOB.Value.ToShortDateString()</li>
+    }
+    @if (Model.isSubscribed)
+    {
+        <li><strong>Subcribed to Email Notifications</strong></li>
     }
 </ul>

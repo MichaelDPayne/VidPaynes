@@ -39,6 +39,16 @@ namespace VidPaynes.Controllers
             if (customer == null)
                 return HttpNotFound();
 
+            var viewModel = new NewCustomerViewModel()
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+
+            if (User.IsInRole(RoleName.CanManageMovies))
+                return View("New", viewModel);
+
+
             return View(customer);
         }
 
